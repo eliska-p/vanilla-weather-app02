@@ -1,0 +1,57 @@
+body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 30px;
+  font-family: "Heebo", sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-weight: bolder;
+  font-size: 22px;
+}
+h3 {
+  font-size: 20px;
+}
+.characters {
+  color: #7c7c7c;
+  font-size: 18px;
+  list-style-type: none;
+}
+.days {
+  padding: 30px 30px 20px 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  list-style-type: none;
+  font-size: 18px;
+}
+i {
+  color: aliceblue;
+}
+
+.button {
+  background-color: azure;
+  color: #04f05b;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 15px;
+}
+.temperature {
+  color: rgb(33, 33, 33);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.units {
+  position: relative;
+  top: -18px;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}

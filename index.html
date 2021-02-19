@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <script
+      src="https://kit.fontawesome.com/b7db66127a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <i class="fas fa-cloud"></i>
+        <span class="temperature" id="temperature">25</span>
+        <span class="units"
+          ><a href="#" id="celsius-link">°C</a> |
+          <a href="#" id="fahrenheit-link">F°</a></span
+        >
+      </h1>
+
+      <h2>Dreamvillage</h2>
+      <ul class="characters">
+        <li id="description">Sunny as always</li>
+        <li>Feels like temperature: <span id="feelsLike">28</span>°C</li>
+        <li>Humidity: <span id="humidity">50</span>%</li>
+        <li>Wind: <span id="wind">10</span> km/h</li>
+      </ul>
+      <h3>Dreamday 00:00</h3>
+      <ul class="days">
+        <li>
+          Sun 17
+          <i class="fas fa-cloud-sun"></i>
+          -2°C
+        </li>
+        <li>
+          Mon 18
+          <i class="far fa-snowflake"></i>
+          2°C
+        </li>
+        <li>
+          Tue 19
+          <i class="far fa-snowflake"></i>
+          3°C
+        </li>
+        <li>
+          Wed 20
+          <i class="fas fa-cloud-sun"></i>
+          5°C
+        </li>
+        <li>
+          Thu 21
+          <i class="fas fa-cloud"></i>
+          5°C
+        </li>
+      </ul>
+      <br />
+      <form id="search-form">
+        <input
+          id="search-text-input"
+          type="text"
+          placeholder="Enter a city name"
+        />
+        <input class="button" type="submit" value="Search" />
+      </form>
+      <div>
+        <button class="btn btn-success" id="current-location-button">
+          Current location
+        </button>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
