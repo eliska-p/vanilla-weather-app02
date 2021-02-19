@@ -73,6 +73,7 @@ function convertToCelsius(event) {
 }
 
 let celsiusLink = document.querySelector("#celsius-link");
+console.log(celsiusLink);
 celsiusLink.addEventListener("click", convertToCelsius);
 
 // HOMEWORK WEEK 5 bonus
